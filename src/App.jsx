@@ -1,4 +1,5 @@
 import './App.css'
+import Home from './pages/Home/Home'
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
           <Route path="/agent" element={<Agent/>}/>
         </Routes>
       </BrowserRouter> */}
-      
+      <Home/>
 
       {/* <ButtonLink textContent='Play for Free'/> */}
 
