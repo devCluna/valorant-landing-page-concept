@@ -1,0 +1,81 @@
+.maps-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-bg-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8em;
+}
+
+.maps-img-bg{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.maps-text-holder{
+    position: absolute;
+    left: 1.8em;
+    margin-right: 0.8em;
+    max-width: 500px;
+    z-index: 10;
+}
+.maps-text-holder h2{
+    color: var(--third-bg-color);
+    text-shadow: 1px 1px #484848;
+}
+
+.maps-text-holder h2, .maps-text-holder h5{
+    font-family: DINNextW1G-Bold;
+    text-shadow: 1px 1px #484848;
+    margin-bottom: 0.2em;
+}
+
+.maps-text-holder p{
+    font-size: var(--step--1);
+    color: var(--gray-font-color);
+    margin-bottom:0.5em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .maps-text-holder h2{
+        
+    }
+    
+    .maps-text-holder h2, .maps-text-holder h5{
+        font-family: DINNextW1G-Bold;
+        margin-bottom: 0.8em;
+    }
+    
+    .maps-text-holder p{
+        font-size: var(--step--1);
+        margin-bottom:2.8em;
+        color: var(--secondary-font-color);
+        text-shadow: 1px 1px #484848;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
