@@ -18,6 +18,7 @@ import Agents from './sections/Agents/Agents';
 import Maps from './sections/Maps/Maps';
 import Guns from './sections/Guns/Guns';
 import Contact from './sections/Contact/Contact';
+import { useEffect } from 'react';
 
 
 SwiperCore.use([Mousewheel, Pagination, EffectFade])
@@ -33,6 +34,10 @@ const swiperOptions = {
 }
 
 const Home = () => {
+
+    useEffect(()=>{
+        document.title= "Valorant | Home"
+    },[])
   return (
     <>
      <Swiper
@@ -57,7 +62,7 @@ const Home = () => {
         <SwiperSlide>
             <Contact/>
         </SwiperSlide>
-        
+
      </Swiper>
     </>
   )
