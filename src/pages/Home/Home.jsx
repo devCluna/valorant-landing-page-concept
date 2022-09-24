@@ -41,18 +41,23 @@ const Home = () => {
         <SwiperSlide>
             <Hero/>
         </SwiperSlide>
+
         <SwiperSlide>
             <Agents/>
         </SwiperSlide>
-        <SwiperSlide>
-            <Guns/>
-        </SwiperSlide>
+
         <SwiperSlide>
             <Maps/>
         </SwiperSlide>
+        
+        <SwiperSlide>
+            <Guns/>
+        </SwiperSlide>
+
         <SwiperSlide>
             <Contact/>
         </SwiperSlide>
+        
      </Swiper>
     </>
   )
