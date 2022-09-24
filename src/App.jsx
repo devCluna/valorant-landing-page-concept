@@ -11,7 +11,6 @@ function App() {
         </Routes>
       </BrowserRouter> */}
       
-      <Home/>
 
       {/* <ButtonLink textContent='Play for Free'/> */}
 
