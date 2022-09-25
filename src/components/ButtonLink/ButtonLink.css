@@ -76,6 +76,7 @@
 
 .btn__content{
     position: relative;
+    color: var(--primary-font-color);
 }
 
 /* BTN PRIMARY STYLES */
@@ -95,7 +96,7 @@
 
 /* BTN SECONDARY STYLES */
 .btn-secondary{
-    color: var(--secondary-font-color);
+    
 }
 
 .btn-secondary::after, .btn-secondary::before{
@@ -108,6 +109,10 @@
 
 .btn__slide-secondary{
     background-color: var(--primary-bg-color);
+}
+
+.btn-content-secondary{
+    color: red;
 }
 
 /* BTN THIRD STYLES */
