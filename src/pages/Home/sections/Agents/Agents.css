@@ -1,0 +1,67 @@
+.agents-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 232, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8em;
+    position: relative;
+    background-image: url('../../../../assets/agents-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.text-wrapper{
+    
+    max-width: 500px;
+    /* right: 150px; */
+    margin-left: 40%;
+}
+
+.text-wrapper h2{
+    font-weight: bolder;
+    font-family: DINNextW1G-Bold;
+    color: var(--third-font-color);
+}
+
+.text-wrapper h5{
+    font-family: DINNextW1G-Bold;
+    margin-top: 0.6em;
+    color: var(--third-font-color);
+}
+
+.text-wrapper p{
+    margin-top: 0.8em;
+    margin-bottom: 1.8em;
+    font-size: var(--step--1);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .text-wrapper{
+        margin-left: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
