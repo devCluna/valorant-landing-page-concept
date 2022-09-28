@@ -1,0 +1,138 @@
+.btn{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 8px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .15s ease;
+
+    
+}
+
+.btn::after, .btn::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    border: 1px solid var(--secondary-bg-color);
+    height: calc(50% - 5px);
+    transition: all .15s ease;
+}
+.btn::before{
+    top: 0;
+    border-bottom: 0;
+}
+
+.btn::after{
+    bottom: 0;
+    border-top: 0;
+}
+
+.btn__inner{
+    position: relative;
+    padding: 20px 30px;
+    overflow: hidden;
+    display: block;
+}
+
+
+.btn:hover::after , .btn:hover::before{
+    right: 3px;
+    left: 3px;
+}
+
+.btn:hover::before {
+    top: 3px;
+}
+
+.btn:hover::after {
+    bottom: 3px;
+}
+
+.btn__slide{
+    position: absolute;
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: var(--third-bg-color);
+    top: 0;
+    left: -15px;
+    transform: skew(-15deg);
+    transition: all 0.5s ease;
+}
+
+.btn:hover .btn__slide{
+    width: calc(100% + 30px);
+    
+}
+
+.btn:hover .btn__content{
+    color: var(--secondary-font-color);
+}
+
+.btn__content{
+    position: relative;
+    color: var(--primary-font-color);
+}
+
+/* BTN PRIMARY STYLES */
+
+.btn-primary{
+    
+}
+
+.btn-primary::after, .btn-primary::before{
+    border-color: var(--secondary-bg-color);
+}
+
+.btn__inner-primary{
+    background: var(--secondary-bg-color);
+}
+
+
+/* BTN SECONDARY STYLES */
+.btn-secondary{
+    
+}
+
+.btn-secondary::after, .btn-secondary::before{
+    border-color: var(--primary-bg-color)
+}
+
+.btn__inner-secondary{
+    background-color: var(--third-bg-color)
+}
+
+.btn__slide-secondary{
+    background-color: var(--primary-bg-color);
+}
+
+.btn-content-secondary{
+    color: red;
+}
+
+/* BTN THIRD STYLES */
+
+.btn-third{
+    color: var(--primary-font-color);
+}
+
+.btn-third::after, .btn-third::before{
+    border-color: var(--secondary-bg-color)
+}
+
+.btn__inner-third{
+    background-color: var(--secondary-bg-color)
+}
+
+.btn__slide-third{
+    background-color: var(--primary-bg-color);
+}
+
+.btn__content-third:hover{
+    color: var(--primary-font-color);
+}
